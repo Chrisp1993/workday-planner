@@ -3,6 +3,10 @@ var saveBtns = document.querySelectorAll(".saveBtn");
 var currentDateSection = document.getElementById("currentDay");
 currentDateSection.textContent = moment().format("dddd, MMMM Do");
 
+// console.log(localStorage.getItem("8"))
+// var save = document.getElementById("8")
+// console.log(save)
+// save.value = localStorage.getItem("8")
 
 document.getElementById("8").value = localStorage.getItem("8")
 document.getElementById("9").value = localStorage.getItem("9")
@@ -18,10 +22,8 @@ document.getElementById("17").value = localStorage.getItem("17")
 
 for (var i = 0; i < textAreaSections.length; i++) {
     if (textAreaSections[i].id < moment().hour()) {
-
       textAreaSections[i].classList.add("past");
     } else if (textAreaSections[i].id == moment().hour()) {
-
       textAreaSections[i].classList.add("present");
     } else {
       textAreaSections[i].classList.add("future");

@@ -49,12 +49,12 @@ body {
   }
   
   .present {
-    background-color: #ff6961;
+    background-color: #f87972;
     color: white;
   }
   
   .future {
-    background-color: #77dd77;
+    background-color: #65c965;
     color: white;
   }
   
