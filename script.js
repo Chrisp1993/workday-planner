@@ -27,3 +27,18 @@ for (var i = 0; i < textAreaSections.length; i++) {
       textAreaSections[i].classList.add("future");
     }
   }
+
+  for (var i = 0; i < saveBtns.length; i++) {
+    saveBtns[i].addEventListener("click", function () {
+      console.log(this);
+      console.log(this.previousElementSibling)
+      console.log(this.previousElementSibling.value)
+      console.log(this.previousElementSibling.id)
+  
+      var time = this.previousElementSibling.id
+
+      var userValue = this.previousElementSibling.value
+      localStorage.setItem(time, userValue)
+    });
+  }
+  
